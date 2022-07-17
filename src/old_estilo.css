@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 50px;
+    min-width: 100vh;
+    overflow-x: hidden;
+    min-height: max-content; 
+}
+
+header{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    text-decoration: none;
+}
+.carrossel{
+    width: 60vw;
+    height: 100%;
+    margin: 0;
+}
+.carrossel img{
+    height: 150px;
+}
+
+.img{
+    display: flex;
+    box-sizing: border-box;
+    
+    cursor: default; 
+    padding: 15px;
+}
+section{
+    margin: 0;
+    width: 100%;
+    display: grid; 
+    grid-template-rows: 36px 1fr;
+}
+nav{
+    width: 100vw;
+    height: 37px;
+    display: flex;
+    background-color: brown;
+    top: 0px;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    
+}
+
+section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    list-style: none;
+}
+
+a.botoes{
+    margin-right: 10px;
+    top: 0;
+    z-index: 10;
+    padding: 0px;
+    border-radius: 15px;
+    font-size: clamp(15px, 20px ,34px);
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+}
+a.botoes:hover{
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+section div{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    
+}
+
+nav2{
+    padding: 30px 4vw;
+    border: solid 1px;
+    background-color: rgba(253, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+}
+#fotoSobre{
+    display: flex;
+    margin-right: 5vw;
+    justify-content: flex-start;
+    height: 400px;
+    
+}
+
+#fotoSobre img{
+     width: 460px;
+}
+#local{
+    display: flex;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 10vh;
+    border: 2px solid brown;
+    padding: 25px;
+    border-radius: 55px;
+}
+.botoes:hover{
+    background-color: brown;
+}
+.off{
+    display: flex;
+}
+div5 .off {
+    z-index: -1;
+    width: 500px;
+    height: 70vh;
+    border: 1px solid;
+    border-radius: 40px;
+    background-color: rgba(87, 66, 66, 0.53);
+}
+.off [ofertas]{
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+footer{
+    width: 100%;
+    display: flex;
+    background-color: brown;
+    color: azure;
+    float: right;
+    position: fixed;
+    justify-content: center;
+    bottom: 0px;
+    margin-bottom: 0px;
+    z-index: 10;
+}
