@@ -8,7 +8,9 @@ body{
     overflow-x: hidden;
     min-height: max-content; 
 }
-
+header #imgLogo{
+    width: 100%;
+}
 header{
     margin: 0;
     display: grid;
@@ -134,7 +136,10 @@ section div{
 
 nav2{
     padding: 30px 4vw;
+    width: 100vw;
     border: solid 1px;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(253, 0, 0, 0.1);
     font-family: 'Quicksand', sans-serif;
 }
@@ -166,7 +171,7 @@ nav2{
 }
 div5 .off {
     z-index: -1;
-    width: 500px;
+    width: 430px;
     height: 70vh;
     border: 1px solid;
     border-radius: 40px;
@@ -175,9 +180,20 @@ div5 .off {
 .off [ofertas]{
     margin-top: 10px;
     align-items: center;
+    
     width: 100%;
     height: 100%;
 
+}
+div6 div{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 400pw;
+}
+div6 div img{
+    height: 100%;
+    width: 80%;
 }
 footer{
     width: 100%;
