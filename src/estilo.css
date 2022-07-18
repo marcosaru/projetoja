@@ -15,8 +15,9 @@ header #imgLogo{
 header{
     margin: 0;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
     text-decoration: none;
+    height: 100%;
 }
 .carrossel{
     width: 60vw;
@@ -30,9 +31,8 @@ header{
 .img{
     display: flex;
     box-sizing: border-box;
-    
+    height: 90%;
     cursor: default; 
-    padding: 15px;
 }
 section{
     margin: 0;
@@ -153,7 +153,8 @@ nav2{
 }
 
 #fotoSobre img{
-     width: 460px;
+     width: 400px;
+     height: 100%;
 }
 #local{
     display: flex;
