@@ -14,20 +14,23 @@ body{
     border: none;
     display: inline-block;
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 190px;
+    width: 300px;
     margin: 0;
     top:0;
 }
+p2{
+    color:#fff;
+}
 header{
-    background-color: black;
+    background-color: rgb(49, 41, 41);
 
     border: none;
     box-sizing: border-box;
     margin: 0;
     top:0;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 260px 1fr;
     text-decoration: none;
     height: 150px;
 }
