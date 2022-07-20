@@ -1,38 +1,66 @@
 body{
     margin: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 1fr 50px;
     min-width: 100vh;
     overflow-x: hidden;
-    min-height: max-content; 
+    min-height: max-content;
+    background-color: rgba(75, 73, 73, 0.822); 
 }
-header #imgLogo{
-    width: 100%;
-    height: 100%;
+#imgLogo{
+    border: none;
+    display: inline-block;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    top:0;
 }
 header{
+    background-color: black;
+
+    border: none;
+    box-sizing: border-box;
     margin: 0;
+    top:0;
     display: grid;
     grid-template-columns: 200px 1fr;
     text-decoration: none;
-    height: 100%;
+    height: 150px;
+}
+#carro{
+    display: flex;
+    justify-content: flex-end;
+    width: 860px;
 }
 .carrossel{
-    width: 60vw;
+    width: 860px;
     height: 100%;
-    margin: 0;
+    margin: 0px 0px 0px 25px;
+    top:0;
+    border: none;
+}
+header div{
+    display: flex;
+    justify-content: end;
+    height: 150px;
 }
 .carrossel img{
     height: 150px;
 }
 
-.img{
+a .img{
     display: flex;
     box-sizing: border-box;
+    width: 100%;
     height: 90%;
     cursor: default; 
+}
+header a{
+    height: 150px;
 }
 section{
     margin: 0;
@@ -66,7 +94,7 @@ section ul{
         position: relative;
         align-items: center;
         padding: 1px 1px;
-        color: beige;
+        color: rgb(255, 255, 255);
         margin: 5px 5px;
         text-decoration: none;
         font-size: auto;
@@ -84,7 +112,7 @@ a.botoes{
     position: relative;
     align-items: center;
     padding: 10px 10px;
-    color: beige;
+    color: rgb(255, 255, 255);
     margin: 5px 10px;
     text-decoration: none;
     font-size: auto;
@@ -136,13 +164,30 @@ section div{
 }
 
 nav2{
-    padding: 30px 4vw;
+    margin: 30px 0px 0px 30px;
     width: 100vw;
-    border: solid 1px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(253, 0, 0, 0.1);
+    background-color: rgba(85, 85, 85, 0);
     font-family: 'Quicksand', sans-serif;
+}
+#promocoes {
+    display: flex;
+    justify-content: center;}
+@media(min-width:900px){
+#promocoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px;
+}
+#promocoes .off, #promocoes .off2{
+    margin: 0 5px 0 0;
+    height: 500px; 
+}}@media(max-width:900px){
+#off2{
+    display: none;
+}
 }
 #fotoSobre{
     display: flex;
@@ -171,18 +216,35 @@ nav2{
 .off{
     display: flex;
 }
-div5 .off {
+div2{
+    width: 50%;
+}
+div5 .off, div5 .off2 {
     z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 430px;
     height: 70vh;
     border: 1px solid;
-    border-radius: 40px;
-    background-color: rgba(87, 66, 66, 0.53);
+    border-radius: 60px;
+    background-image: linear-gradient(rgba(0, 0, 0,0.6) 30%, rgba(131, 0, 0,0.6) );
 }
-.off [ofertas]{
+
+div5 img:hover {
+    z-index: -1;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 60px;
+}
+div5 img{
+    border-radius: 30px;
+}
+.off [ofertas], .off2 [ofertas]{
+    display: flex;
     margin-top: 10px;
     align-items: center;
-    
+    justify-content: center;
     width: 100%;
     height: 100%;
 
