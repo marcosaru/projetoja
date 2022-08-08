@@ -1,0 +1,25 @@
+{
+  "name": "projetoja",
+  "version": "1.0.0",
+  "description": "Este website foi desenvolvido por Marcos Gonçalves, apenas para fins didaticos.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosaru/projetoja.git"
+  },
+  "author": "Marcos Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosaru/projetoja/issues"
+  },
+  "homepage": "https://github.com/marcosaru/projetoja#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

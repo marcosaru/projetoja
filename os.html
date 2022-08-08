@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+    <style>
+        body {
+            background-color: rgb(49, 41, 41);
+        }
+
+        #tabela {
+            font-size: 2em;
+            padding: 2px;
+            border: white;
+            color: white;
+        }
+    </style>
+    <script src="/src/jquery.js"></script>
+</head>
+
+<body>
+    <div id="ordem">
+        <table id="tabela" border="3">
+            <tr>
+                <td>O.S</td>
+                <td>Cliente</td>
+                <td>Telefone</td>
+                <td>Valor</td>
+            </tr>
+        </table>
+    </div>
+    <div id="area"></div>
+    <script>
+        const clientes = [
+            { "OS": 1001, "Cliente": "Marcos Gonçalves Teixeira", "Telefone": 48991759259, "Valor": "R$ 150,00" },
+            { "OS": 1002, "Cliente": "Mateus Gonçalves T.", "Telefone": 48948484804, "Valor": "R$ 160,00" },
+            { "OS": 1003, "Cliente": "Mauricio G Tx", "Telefone": 48991995509, "Valor": "R$ 170,00" }
+        ]
+
+        clientes.forEach(e => {
+            $("#tabela").append(`<tr><td>${e.OS}</td><td>${e.Cliente}</td><td>${e.Telefone}</td><td>${e.Valor}</td></tr>`)
+        })
+
+        $('#area').append(function () {
+            fetch('src/OS.JSON')
+               
+                .then(response => response.text())
+                .then(response => {
+                    jsdata = JSON.stringify(response)
+                   console.log(response)
+                    // response.forEach(e => {
+                        
+                    //         $('#tabela').append(`<tr><td>${e}</td><td>${e}</td><td>${e}</td><td>${e}</td></tr>`)
+                            
+                    // })
+                })
+        })
+
+    </script>
+
+</body>
+
+</html>
